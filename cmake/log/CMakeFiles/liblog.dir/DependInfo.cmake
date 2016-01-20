@@ -1,12 +1,12 @@
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
+  "CXX"
   )
 # The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/home/hankin/scallop/Scallop/json/cJSON.c" "/home/hankin/scallop/Scallop/cmake/lib/CMakeFiles/libcjson.dir/cJSON.c.o"
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/hankin/scallop/Scallop/log/log.cpp" "/home/hankin/scallop/Scallop/cmake/log/CMakeFiles/liblog.dir/log.cpp.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES

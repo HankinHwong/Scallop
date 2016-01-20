@@ -56,10 +56,10 @@ CMAKE_BINARY_DIR = /home/hankin/scallop/Scallop/cmake
 # Target rules for target CMakeFiles/scallop.dir
 
 # All Build rule for target.
-CMakeFiles/scallop.dir/all: lib/CMakeFiles/libcjson.dir/all
+CMakeFiles/scallop.dir/all: json/CMakeFiles/libcjson.dir/all
 	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/depend
 	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/hankin/scallop/Scallop/cmake/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hankin/scallop/Scallop/cmake/CMakeFiles  3
 	@echo "Built target scallop"
 .PHONY : CMakeFiles/scallop.dir/all
 
@@ -88,53 +88,103 @@ clean: CMakeFiles/scallop.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory lib
+# Directory level rules for directory json
 
 # Convenience name for "all" pass in the directory.
-lib/all: lib/CMakeFiles/libcjson.dir/all
-.PHONY : lib/all
+json/all: json/CMakeFiles/libcjson.dir/all
+.PHONY : json/all
 
 # Convenience name for "clean" pass in the directory.
-lib/clean: lib/CMakeFiles/libcjson.dir/clean
-.PHONY : lib/clean
+json/clean: json/CMakeFiles/libcjson.dir/clean
+.PHONY : json/clean
 
 # Convenience name for "preinstall" pass in the directory.
-lib/preinstall:
-.PHONY : lib/preinstall
+json/preinstall:
+.PHONY : json/preinstall
 
 #=============================================================================
-# Target rules for target lib/CMakeFiles/libcjson.dir
+# Target rules for target json/CMakeFiles/libcjson.dir
 
 # All Build rule for target.
-lib/CMakeFiles/libcjson.dir/all:
-	$(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/depend
-	$(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/build
+json/CMakeFiles/libcjson.dir/all:
+	$(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/depend
+	$(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/hankin/scallop/Scallop/cmake/CMakeFiles  1
 	@echo "Built target libcjson"
-.PHONY : lib/CMakeFiles/libcjson.dir/all
+.PHONY : json/CMakeFiles/libcjson.dir/all
 
 # Include target in all.
-all: lib/CMakeFiles/libcjson.dir/all
+all: json/CMakeFiles/libcjson.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-lib/CMakeFiles/libcjson.dir/rule: cmake_check_build_system
+json/CMakeFiles/libcjson.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/libcjson.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 json/CMakeFiles/libcjson.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 0
-.PHONY : lib/CMakeFiles/libcjson.dir/rule
+.PHONY : json/CMakeFiles/libcjson.dir/rule
 
 # Convenience name for target.
-libcjson: lib/CMakeFiles/libcjson.dir/rule
+libcjson: json/CMakeFiles/libcjson.dir/rule
 .PHONY : libcjson
 
 # clean rule for target.
-lib/CMakeFiles/libcjson.dir/clean:
-	$(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/clean
-.PHONY : lib/CMakeFiles/libcjson.dir/clean
+json/CMakeFiles/libcjson.dir/clean:
+	$(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/clean
+.PHONY : json/CMakeFiles/libcjson.dir/clean
 
 # clean rule for target.
-clean: lib/CMakeFiles/libcjson.dir/clean
+clean: json/CMakeFiles/libcjson.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory log
+
+# Convenience name for "all" pass in the directory.
+log/all: log/CMakeFiles/liblog.dir/all
+.PHONY : log/all
+
+# Convenience name for "clean" pass in the directory.
+log/clean: log/CMakeFiles/liblog.dir/clean
+.PHONY : log/clean
+
+# Convenience name for "preinstall" pass in the directory.
+log/preinstall:
+.PHONY : log/preinstall
+
+#=============================================================================
+# Target rules for target log/CMakeFiles/liblog.dir
+
+# All Build rule for target.
+log/CMakeFiles/liblog.dir/all:
+	$(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/depend
+	$(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/hankin/scallop/Scallop/cmake/CMakeFiles  2
+	@echo "Built target liblog"
+.PHONY : log/CMakeFiles/liblog.dir/all
+
+# Include target in all.
+all: log/CMakeFiles/liblog.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+log/CMakeFiles/liblog.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 log/CMakeFiles/liblog.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 0
+.PHONY : log/CMakeFiles/liblog.dir/rule
+
+# Convenience name for target.
+liblog: log/CMakeFiles/liblog.dir/rule
+.PHONY : liblog
+
+# clean rule for target.
+log/CMakeFiles/liblog.dir/clean:
+	$(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/clean
+.PHONY : log/CMakeFiles/liblog.dir/clean
+
+# clean rule for target.
+clean: log/CMakeFiles/liblog.dir/clean
 .PHONY : clean
 
 #=============================================================================

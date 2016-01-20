@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles /home/hankin/scallop/Scallop/cmake/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/hankin/scallop/Scallop/cmake && $(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles /home/hankin/scallop/Scallop/cmake/log/CMakeFiles/progress.marks
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 log/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 log/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,81 +88,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 log/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 log/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/hankin/scallop/Scallop/cmake && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named scallop
+# Convenience name for target.
+log/CMakeFiles/liblog.dir/rule:
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 log/CMakeFiles/liblog.dir/rule
+.PHONY : log/CMakeFiles/liblog.dir/rule
 
-# Build rule for target.
-scallop: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 scallop
-.PHONY : scallop
-
-# fast build rule for target.
-scallop/fast:
-	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/build
-.PHONY : scallop/fast
-
-#=============================================================================
-# Target rules for targets named libcjson
-
-# Build rule for target.
-libcjson: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 libcjson
-.PHONY : libcjson
-
-# fast build rule for target.
-libcjson/fast:
-	$(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/build
-.PHONY : libcjson/fast
-
-#=============================================================================
-# Target rules for targets named liblog
-
-# Build rule for target.
-liblog: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 liblog
+# Convenience name for target.
+liblog: log/CMakeFiles/liblog.dir/rule
 .PHONY : liblog
 
 # fast build rule for target.
 liblog/fast:
-	$(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/build
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/build
 .PHONY : liblog/fast
 
-scallop.o: scallop.cpp.o
-.PHONY : scallop.o
+log.o: log.cpp.o
+.PHONY : log.o
 
 # target to build an object file
-scallop.cpp.o:
-	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/scallop.cpp.o
-.PHONY : scallop.cpp.o
+log.cpp.o:
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/log.cpp.o
+.PHONY : log.cpp.o
 
-scallop.i: scallop.cpp.i
-.PHONY : scallop.i
+log.i: log.cpp.i
+.PHONY : log.i
 
 # target to preprocess a source file
-scallop.cpp.i:
-	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/scallop.cpp.i
-.PHONY : scallop.cpp.i
+log.cpp.i:
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/log.cpp.i
+.PHONY : log.cpp.i
 
-scallop.s: scallop.cpp.s
-.PHONY : scallop.s
+log.s: log.cpp.s
+.PHONY : log.s
 
 # target to generate assembly for a file
-scallop.cpp.s:
-	$(MAKE) -f CMakeFiles/scallop.dir/build.make CMakeFiles/scallop.dir/scallop.cpp.s
-.PHONY : scallop.cpp.s
+log.cpp.s:
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f log/CMakeFiles/liblog.dir/build.make log/CMakeFiles/liblog.dir/log.cpp.s
+.PHONY : log.cpp.s
 
 # Help Target
 help:
@@ -172,12 +147,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... scallop"
-	@echo "... libcjson"
 	@echo "... liblog"
-	@echo "... scallop.o"
-	@echo "... scallop.i"
-	@echo "... scallop.s"
+	@echo "... log.o"
+	@echo "... log.i"
+	@echo "... log.s"
 .PHONY : help
 
 
@@ -189,6 +162,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/hankin/scallop/Scallop/cmake && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

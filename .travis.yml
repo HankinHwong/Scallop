@@ -1,0 +1,15 @@
+language:
+    - cpp
+os:
+    - linux
+compiler:
+    - g++
+    
+sudo:
+    - required
+
+script:
+    - cd cmake
+    - rm -rf *
+    - cmake ..
+    - make all

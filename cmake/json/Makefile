@@ -72,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/hankin/scallop/Scallop/cmake && $(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles /home/hankin/scallop/Scallop/cmake/lib/CMakeFiles/progress.marks
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 lib/all
+	cd /home/hankin/scallop/Scallop/cmake && $(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles /home/hankin/scallop/Scallop/cmake/json/CMakeFiles/progress.marks
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 json/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hankin/scallop/Scallop/cmake/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 json/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,12 +88,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 json/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 json/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -102,17 +102,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-lib/CMakeFiles/libcjson.dir/rule:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 lib/CMakeFiles/libcjson.dir/rule
-.PHONY : lib/CMakeFiles/libcjson.dir/rule
+json/CMakeFiles/libcjson.dir/rule:
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f CMakeFiles/Makefile2 json/CMakeFiles/libcjson.dir/rule
+.PHONY : json/CMakeFiles/libcjson.dir/rule
 
 # Convenience name for target.
-libcjson: lib/CMakeFiles/libcjson.dir/rule
+libcjson: json/CMakeFiles/libcjson.dir/rule
 .PHONY : libcjson
 
 # fast build rule for target.
 libcjson/fast:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/build
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/build
 .PHONY : libcjson/fast
 
 cJSON.o: cJSON.c.o
@@ -120,7 +120,7 @@ cJSON.o: cJSON.c.o
 
 # target to build an object file
 cJSON.c.o:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/cJSON.c.o
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/cJSON.c.o
 .PHONY : cJSON.c.o
 
 cJSON.i: cJSON.c.i
@@ -128,7 +128,7 @@ cJSON.i: cJSON.c.i
 
 # target to preprocess a source file
 cJSON.c.i:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/cJSON.c.i
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/cJSON.c.i
 .PHONY : cJSON.c.i
 
 cJSON.s: cJSON.c.s
@@ -136,7 +136,7 @@ cJSON.s: cJSON.c.s
 
 # target to generate assembly for a file
 cJSON.c.s:
-	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f lib/CMakeFiles/libcjson.dir/build.make lib/CMakeFiles/libcjson.dir/cJSON.c.s
+	cd /home/hankin/scallop/Scallop/cmake && $(MAKE) -f json/CMakeFiles/libcjson.dir/build.make json/CMakeFiles/libcjson.dir/cJSON.c.s
 .PHONY : cJSON.c.s
 
 # Help Target

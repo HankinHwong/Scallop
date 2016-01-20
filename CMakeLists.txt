@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 2.6)
 
 project (SCALLOP C CXX)
 
-add_subdirectory(json lib)
+add_subdirectory(json)
+add_subdirectory(log)
 include_directories(json)
 #add_subdirectory(log)
 #add_subdirectory(pool)
